@@ -1,0 +1,215 @@
+:root {
+    --green: #00b30c;
+    --gray1: #353537;
+    --gray2: #eaeaeb;
+    --gray3: #777777;
+}
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+h2 {
+    font-size: 3rem;
+}
+/** Header scroll **/
+.header-scroll {
+    opacity: 0;
+    margin-top: -300px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+    transition: all .5s ease;
+    border-bottom: 1px solid rgba(0,0,0,.1)
+}
+.header-scroll.active {
+    margin-top: 0;
+    opacity: 1;
+}
+
+.header-scroll .nav-link {
+    color:#777;
+}
+.header-scroll .btn-outline-success {
+    color: #00b30c;
+}
+.header-scroll .btn-outline-success:hover {
+    color: white;
+}
+/* Header */
+.header {
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    min-height: 30rem;
+}
+a.btn-outline-light:hover {
+    color: black!important;
+}
+.header .nav-link,
+.header .nav-link:hover {
+    color: white!important;
+}
+
+.titulo {
+    font-weight: 700;
+}
+.buscador {
+    min-height: 25rem;
+}
+.btn-success {
+    background-color: #00b30c;
+}
+
+/** categorys **/
+.category p {
+    opacity: 0;
+    padding-top: 30px;
+    transition: all .3s ease;
+}
+.category {
+    overflow: hidden;
+    padding-bottom: 60px;
+    height: calc(auto + 30px);
+}
+.category h3::before {
+    content: '';
+    display: block;
+    margin: 5px auto 20px auto;
+    height: 1px;
+    width: 60px;
+    background-color: #00b30c;
+    transition: all .3s ease;
+}
+.category:hover h3::before{
+    width: 180px;
+}
+.category:hover p {
+    display: block;
+    opacity: 1;
+    padding-top: 10px;
+    color: #999;
+}
+.category h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+/** Pro **/
+.bg-dark{
+    background-color: #353537!important;
+}
+.new-pro  .row {
+    height: 25rem;
+}
+
+/** first steps */
+.first-steps .row > div {
+    flex: 1 0 calc(50% - 1rem);
+}
+@media (min-width: 992px) {
+    .first-steps .row > div {
+        flex: 0 1 calc(20% - 1rem);
+    }
+}
+.first-steps .description {
+    height: 20rem;
+    background-size: cover;
+}
+.first-steps .description p {
+    font-size: .9rem;
+}
+.first-steps .description  span {
+    display: block;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.first-steps .logo {
+    background-image: url(../img/service_1.png);
+}
+.first-steps .social-media {
+    background-image: url(../img/service_2.png);
+}
+.first-steps .audio {
+    background-image: url(../img/service_3.png);
+}
+.first-steps .translate {
+    background-image: url(../img/service_4.png);
+}
+.first-steps .wordpress {
+    background-image: url(../img/service_5.png);
+}   
+
+/** Beneficios **/
+.benefits .row{
+    height: 20rem;
+}
+.item h3 {
+    font-weight: 300;
+}
+.item h3 span {
+    font-weight: 700;
+}
+
+/** Testimonials **/
+.testimonials {
+    background-color: #eaeaeb;
+}
+.testimonials .carousel {
+    background-color: white;
+}
+.testimonials .carousel-item  h4 {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.testimonials .carousel-item blockquote {
+    font-size: 1.8rem;
+    color: #676767;
+    font-style: italic;
+}
+.testimonials .carousel-item  p {
+    font-size: .8rem;
+}
+
+/** tips **/
+.card {
+    margin-bottom: 1rem;
+}
+.card-title {
+    font-size: 1.2rem;
+}
+
+/** Footer **/
+
+.footer {
+    border-top: 1px solid #eaeaeb;
+}
+.footer h3 {
+    color: #777777;
+    font-size: 1.2rem;
+}
+.footer .nav-link {
+    color: #777777!important;
+    padding: .5rem 0;
+    font-size: 1rem;
+}
+.footer .container-fluid  {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer .container-fluid > div {
+    justify-content: space-between;
+    flex: 0 0 calc(50% - 1rem);
+    padding: 1rem;
+}
+@media (min-width: 768px) {
+    .footer .container-fluid > div  {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+}
+
+@media (min-width: 992px) {
+    .footer .container-fluid > div  {
+        flex: 0 1 calc(20%);
+    }
+}
